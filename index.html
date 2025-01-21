@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <!-- basic ui to test the api -->
   <body>
-    <!-- basic ui to test the api -->
+    <!-- getting user input -->
     <section>
-        
+      <input
+        id="user_search_query"
+        placeholder="enter search query"
+        type="text"
+      />
+      <button id="search_button" type="submit">search</button>
     </section>
+
+    <section>
+      <!-- display the images -->
+      <div id="images-box"></div>
+    </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
