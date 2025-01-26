@@ -5,7 +5,7 @@ let search_query = "";
 
 const fetch_image = async (query) => {
   const api_key = "23769202-6fa079976c6dad18b1f3fc9bf";
-  const url = `https://pixabay.com/api?key=${api_key}&q=${query}`;
+  const url = `https://pixabay.com/api?key=${api_key}&q=${encodeURIComponent(query)}`;
 
   const response = await fetch(url);
   const data = await response.json();

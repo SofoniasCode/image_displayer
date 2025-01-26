@@ -3,25 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <!-- basic ui to test the api -->
   <body>
-    <!-- getting user input -->
-    <section>
-      <input
-        id="user_search_query"
-        placeholder="enter search query"
-        type="text"
-      />
-      <button id="search_button" type="submit">search</button>
-    </section>
+    <section id="container">
+      <main id="main-container">
+        <div>
+          <!-- the images -->
+          <div id="main-content">
+            <section id="images-result"></section>
+          </div>
+        </div>
+      </main>
 
-    <section>
-      <!-- display the images -->
-      <div id="images-box"></div>
-    </section>
+      <!-- sidebar for history managment & search & favorite images -->
+      <aside id="aside-container">
+        <div>
+          <header>The imager</header>
+        </div>
+        <!-- search -->
+        <div id="#search-desktop">
+          <input id="search-input" type="text" placeholder="serch" />
+          <button id="search-button">serach</button>
+        </div>
 
-    <script src="./script.js"></script>
+        <!-- favorite images -->
+        <div>
+          <p>Favorites</p>
+          <ul></ul>
+        </div>
+
+        <!-- history managment -->
+        <div>
+          <p>Search History</p>
+        </div>
+      </aside>
+    </section>
+    <script src="./scripts/script.js" type="module"></script>
   </body>
 </html>
